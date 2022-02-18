@@ -8,7 +8,7 @@ public abstract class Instrument extends StockItem implements IPlay{
     private String colour;
     private String type;
 
-    public Instrument(String stockPrice, String rrp, String description, String make, String model, String colour, String type) {
+    public Instrument(double stockPrice, double rrp, String description, String make, String model, String colour, String type) {
         super(stockPrice, rrp, description);
         this.make = make;
         this.model = model;

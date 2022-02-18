@@ -1,22 +1,22 @@
 package shop.stockItems;
 
 public abstract class StockItem implements ISell{
-    private String stockPrice;
-    private String rrp;
+    private double stockPrice;
+    private double rrp;
     private String description;
 
 
-    public StockItem(String stockPrice, String rrp, String description) {
+    public StockItem(double stockPrice, double rrp, String description) {
         this.stockPrice = stockPrice;
         this.rrp = rrp;
         this.description = description;
     }
 
-    public String getStockPrice() {
+    public double getStockPrice() {
         return stockPrice;
     }
 
-    public String getRrp() {
+    public double getRrp() {
         return rrp;
     }
 
