@@ -31,4 +31,9 @@ public abstract class Instrument extends StockItem implements IPlay{
     public String getType() {
         return type;
     }
+
+    @Override
+    public double calculateMarkup() {
+        return this.getRrp() - this.getStockPrice();
+    }
 }

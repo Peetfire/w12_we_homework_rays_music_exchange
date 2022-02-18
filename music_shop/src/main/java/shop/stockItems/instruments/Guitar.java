@@ -19,10 +19,7 @@ public class Guitar extends Instrument{
     }
 
 
-    @Override
-    public double calculateMarkup() {
-        return this.getRrp() - this.getStockPrice();
-    }
+
 
     @Override
     public String play() {
