@@ -28,5 +28,24 @@ public class GuitarTest {
     public void hasDescription(){
         assertEquals("Stylish electric", guitar.getDescription());
     }
-    
+    // tests for super class Instrumnet
+    @Test
+    public void hasMake(){
+        assertEquals("Gibson", guitar.getMake());
+    }
+
+    @Test
+    public void hasModel(){
+        assertEquals("Firebird", guitar.getModel());
+    }
+
+    @Test
+    public void hasColour(){
+        assertEquals("Fireburst", guitar.getColour());
+    }
+
+    @Test
+    public void hasType(){
+        assertEquals("Guitar", guitar.getType());
+    }
 }
