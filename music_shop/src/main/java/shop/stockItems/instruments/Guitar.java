@@ -21,11 +21,11 @@ public class Guitar extends Instrument{
 
     @Override
     public double calculateMarkup() {
-        return 0;
+        return this.getRrp() - this.getStockPrice();
     }
 
     @Override
     public String play() {
-        return "Guitar goes strumity strum...double";
+        return "Guitar goes strumity strum strum...";
     }
 }

@@ -48,4 +48,24 @@ public class GuitarTest {
     public void hasType(){
         assertEquals("Guitar", guitar.getType());
     }
+
+    @Test
+    public void hasNoOfStrings(){
+        assertEquals(6, guitar.getNoOfStrings());
+    }
+
+    @Test
+    public void hasGuitarType(){
+        assertEquals("Electric", guitar.getGuitarType());
+    }
+
+    @Test
+    public void canPlay(){
+        assertEquals("Guitar goes strumity strum strum...", guitar.play());
+    }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(100.00, guitar.calculateMarkup(), 0.0);
+    }
 }
