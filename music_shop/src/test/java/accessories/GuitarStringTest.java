@@ -45,5 +45,19 @@ public class GuitarStringTest {
         assertEquals("Guitar Accessories", strings.getCategory());
     }
 
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(1.00, strings.calculateMarkup(), 0.0);
+    }
+    // Tests for guitarString class
+    @Test
+    public void hasStringType(){
+        assertEquals("Electric", strings.getStringType());
+    }
+
+    @Test
+    public void hasGauge(){
+        assertEquals("Extra Light", strings.getGauge());
+    }
 
 }
