@@ -36,4 +36,8 @@ public class Shop {
         return "Item not found in stock";
     }
 
+    public double calculateTotalMarkup(){
+        return this.stock.stream().map(ISell::calculateMarkup).reduce(0.0, Double::sum);
+    }
+
 }

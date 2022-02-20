@@ -57,4 +57,16 @@ public class ShopTest {
         shop.removeStock(stockItem2);
         assertEquals(1, shop.getStockCount());
     }
+
+    @Test
+    public void canGetTotalMarkup(){
+        shop.addStock(stockItem1);
+        shop.addStock(stockItem2);
+        shop.addStock(stockItem3);
+        shop.addStock(stockItem1);
+        shop.addStock(stockItem2);
+        shop.addStock(stockItem3);
+        assertEquals(353.0, shop.calculateTotalMarkup(), 0.0);
+
+    }
 }
